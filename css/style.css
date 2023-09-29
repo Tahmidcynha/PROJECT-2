@@ -1,0 +1,338 @@
+/* COMMON START HERE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1187px;
+    margin:auto;
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn a{
+    text-transform: uppercase;
+    color: #0b1016;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 19px 42px;
+    background-color: #cfc91d ;
+    border: none;
+}
+.heading h2{
+    text-transform: uppercase;
+    font-size: 46px ;
+    font-weight: 800;
+    color: #02918c ;
+}
+.heading img{
+    padding-top: 28px ;
+    padding-bottom: 28px;
+}
+
+/* COMMON END HERE */
+
+/* NAVBAR START HERE */
+nav{
+    background-color: #02918b ;
+}
+.logo{
+    width: 30%;
+}
+.logo img{
+    padding: 17px 0px 23px 0px;
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 25px 25px;
+    display: block;
+}
+/* NAVBAR END HERE  */
+
+/* BANNER START HERE  */
+#banner{
+    background-image: url(../image/Banner.jpg);
+    background-size: cover;
+    height: 728px;
+    background-repeat: no-repeat;
+    background-color: #0b101638;
+    background-blend-mode: screen;
+}
+.banner_cnt{
+    text-align: center;
+    width: 100%;
+    height: 728px;
+    padding: 209px 0px;
+}
+.banner_cnt h4{
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+.banner_cnt h1{
+    font-weight: 800;
+    font-size: 68px;
+    color: white;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+.banner_cnt p{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+.banner_cnt img{
+    margin: 52px 0px;
+}
+/* BANNER END HERE  */
+
+/* ABOUT START HERE  */
+#about{
+    padding-top: 99px;
+    padding-bottom: 80px;
+}
+#about .container{
+    display: block;
+}
+.about_cnt{
+    text-align: center;
+}
+.about_cnt p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    margin-bottom: 77px;
+}
+.about_cnt b{
+    font-size: 23px ;
+    font-weight: 800;
+    color: #7e8287;
+}
+
+#about .row{
+    /* background-color: #cfc91d; */
+    width: 100%;
+}
+.about_card{
+    width: 25%;
+    text-align: center;
+    padding-top: 35px;
+    border-right: 1.5px solid #7e82876e ;
+}
+.about_card span{
+    color: #02918cc9;
+    font-size: 30px ;
+    padding-top: 35px;
+}
+.about_card h4{
+    font-size: 16px ;
+    font-weight: 800 ;
+    color: #7e8287 ;
+    padding: 28px 0px;
+}
+.about_card p{
+    font-size: 11px;
+    color: #7e8287 ;
+    font-weight: 400 ;
+    line-height: 18px;
+    padding-bottom: 52px;
+}
+.about_card:last-child{
+    border-right: none;
+}
+/* ABOUT END HERE  */
+
+/* SERVICES START HERE  */
+#services{
+    background-image: url(../image/SERVICES.jpg);
+    height: 728px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#services .services_2{
+    width: 50%;
+    padding-left: 42px;
+    height: 728px;
+}
+#services .row{
+    width: 100%;
+}
+#services .heading{
+    margin-top: 72px;
+}
+#services .heading p {
+    line-height: 38px;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color: #7e8287;
+    margin-bottom: 52px;
+}
+#services .about_card{
+    padding-top: 0px;
+    border-right: none;
+    width: 50%;
+    text-align: left;
+}
+#services .about_card h4{
+    padding: 15px 0px;
+}
+/* SERVICES END HERE  */
+
+/* WORK START HERE  */
+#work{
+    padding-bottom: 100px;
+}
+#work .heading{
+    margin: 109px 0px 79px 0px ;
+    text-align: center;
+    width: 100%;
+}
+#work .heading p {
+    line-height: 38px;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color: #7e8287;
+}
+#work .work_card{
+    width: 25%;
+    position: relative;
+}
+#work .work_card img{
+    width: 100%;
+    display: block;
+}
+#work .overlay{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(2, 145, 140, 0.85);
+    inset: 20px;
+    padding: 51px 26px ;
+    line-height: 21px;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: 450ms;
+}
+#work .overlay h4{
+    font-size: 16px ;
+    font-weight: 800 ;
+    color: white;
+    padding-bottom: 15px;
+}
+#work .overlay p{
+    font-size: 13px ;
+    font-weight: 400 ;
+    color: white;
+}
+#work .work_card:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+/* WORK END HERE  */
+
+/* CONTACT START HERE  */
+#contact{
+  
+}
+#contact .heading{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 73px;
+
+}
+#contact .heading p{
+    font-size: 16px ;
+    font-weight: 400px ;
+    color: #7e8287;
+    line-height: 38px ;
+}
+#contact_2{
+    background-color: #0b0b0b;
+    height: 566px;
+}
+#contact_2 .container .input{
+    width: 100%;
+}
+#contact_2 .container input {
+    display: block;
+    text-align: center;
+    width: 640px;
+    height: 99px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 68px;
+    padding-bottom: 17px;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #898989;
+    outline: none;
+    color: white;
+}
+    
+#contact_2 input:focus{
+    border-color: #02918c;
+}
+#contact_2 .container{
+    display: block;
+}
+
+#contact_2 .btn{
+    padding: 65px 0px;
+    text-align: center;
+}
+#contact_2 .btn button{
+    padding: 19px 65px;
+    background-color: #cfc91d;
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: 0b1016;
+}
+/* CONTACT END HERE  */
+
+/* COPYRIGHT START HERE  */
+
+#copyright{
+    background-color: #000000;
+}
+#copyright .copy_cnt{
+    height: 71px;
+    width: 100%;
+}
+
+#copyright .copy_cnt p{
+    font-size: 12px;
+    color: #7e8287;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 34px 0px;
+}
+/* COPYRIGHT END HERE  */
+
+
